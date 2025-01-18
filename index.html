@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-page">
+        <h1>BlackJack</h1>
+        <button id="play-button">PLAY</button>
+    </div>
+
+    <div id="header" class="hidden">
+        <button id="cash-out-button">CASH OUT</button>
+        <p>Bank: <span id="balance"></span></p>
+        <button id="rules-button">RULES</button>
+    </div>
+
+    <div id="game-page" class="hidden">
+        <div id="action-buttons">
+            <button id="clear-bet-button">CLEAR BET</button>
+            <button id="all-in-button">ALL IN</button>
+            <button id="undo-button">UNDO</button>
+        </div>
+        <div id="chips-container"></div>
+        <div id="container">
+            <div class="total-bet"></div>
+            <button id="deal-button">DEAL</button>
+        </div>
+    </div>
+
+    <div id="play-page" class="hidden">
+        <div id="dealer-side" class="side">
+            <div id="dealer-label" class="label">
+                <span id="dealer-score" class="score">0</span> Dealer
+            </div>
+            <div id="dealer-cards"></div>
+        </div>
+        <div id="middle">
+            <button id="hit-button">Hit</button>
+            <div id="play-bet" class="total-bet"></div>
+            <button id="stand-button">Stand</button>
+        </div>
+        <div id="player-side" class="side">
+            <div id="player-label" class="label">
+                <span id="player-score" class="score">0</span> Player
+            </div>
+            <div id="player-cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
